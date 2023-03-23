@@ -1,0 +1,75 @@
+@import 'vars';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  border-bottom: 0.1rem solid var(--very-light-pink);
+}
+.menu {
+  display: none;
+}
+.logo {
+  width: 10rem;
+}
+.navbar-left ul,
+.navbar-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 6rem;
+}
+.navbar-left {
+  display: flex;
+}
+.navbar-left ul {
+  margin-left: 1.2rem;
+}
+.navbar-left ul li a,
+.navbar-right ul li a {
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 0.1rem solid var(--white);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+  border: 0.1rem solid var(--hospital-green);
+  color: var(--hospital-green);
+}
+.navbar-email {
+  color: var(--very-light-pink);
+  font-size: var(--sm);
+  margin-right: 1.2rem;
+}
+.navbar-shopping-cart {
+  position: relative;
+}
+.navbar-shopping-cart div {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--hospital-green);
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  position: absolute;
+  top: -0.6rem;
+  right: -0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 640px) {
+  .menu {
+    display: block;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+  .navbar-email {
+    display: none;
+  }
+}

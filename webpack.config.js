@@ -9,6 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
+        publicPath: '/',
         clean: true
     },
     resolve: {
@@ -57,16 +58,4 @@ module.exports = {
             filename: 'assets/styles/[name][contenthash].css'
         }),
     ],
-    devServer:{
-        static:{
-            directory: path.resolve(__dirname, 'dist'),
-            watch: true
-        },
-        watchFiles: path.join(__dirname, './**'),
-        compress: true,
-        historyApiFallback: true,
-        port: 3033,
-        open: true,
-    }
-
 }
