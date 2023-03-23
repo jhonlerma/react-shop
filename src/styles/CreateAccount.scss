@@ -9,17 +9,17 @@
 .CreateAccount-container {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	width: 300px;
+	width: 30rem;
 }
 .logo {
-	width: 150px;
-	margin-bottom: 48px;
+	width: 15rem;
+	margin-bottom: 4.8rem;
 	justify-self: center;
 	display: none;
 }
 .title {
 	font-size: var(--lg);
-	margin-bottom: 36px;
+	margin-bottom: 3.6rem;
 	text-align: start;
 }
 .form {
@@ -33,36 +33,36 @@
 .label {
 	font-size: var(--sm);
 	font-weight: bold;
-	margin-bottom: 4px;
+	margin-bottom: 0.4rem;
 }
 .input {
 	background-color: var(--text-input-field);
 	border: none;
-	border-radius: 8px;
-	height: 30px;
+	border-radius: 0.8rem;
+	height: 3rem;
 	font-size: var(--md);
-	padding: 6px;
-	margin-bottom: 12px;
+	padding: 0.6rem;
+	margin-bottom: 1.2rem;
 }
 .input-name,
 .input-email,
 .input-password {
-	margin-bottom: 22px;
+	margin-bottom: 2.2rem;
 }
 .primary-button {
 	background-color: var(--hospital-green);
-	border-radius: 8px;
+	border-radius: 0.8rem;
 	border: none;
 	color: var(--white);
 	width: 100%;
 	cursor: pointer;
 	font-size: var(--md);
 	font-weight: bold;
-	height: 50px;
+	height: 5rem;
 }
 .login-button {
-	margin-top: 14px;
-	margin-bottom: 30px;
+	margin-top: 1.4rem;
+	margin-bottom: 3rem;
 }
 @media (max-width: 640px) {
 	.form-container {

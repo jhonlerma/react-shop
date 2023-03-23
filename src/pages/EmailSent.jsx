@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/SendEmail.scss';
+import '../styles/EmailSent.scss';
 
-const SendEmail = () => {
+const EmailSent = () => {
   return (
-    <div className="SendEmail">
+    <div className="EmailSent">
       <div className="form-container">
         <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
         <h1 className="title">Email has been sent!</h1>
@@ -21,4 +21,4 @@ const SendEmail = () => {
   );
 }
 
-export default SendEmail;
+export default EmailSent;

@@ -6,7 +6,7 @@ import Login from '../pages/Login';
 import PasswordRecovery from '../pages/PasswordRecovery';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
-import SendEmail from '../pages/SendEmail';
+import EmailSent from '../pages/EmailSent';
 import NewPassword from '../pages/NewPassword';
 import MyAccount from '../pages/MyAccount';
 import CreateAccount from '../pages/CreateAccount';
@@ -23,7 +23,7 @@ const App = () => {
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/password-recovery" element={<PasswordRecovery />} />
           <Route path='*' element={<NotFound />}></Route>
-          <Route exact path="/send-email" element={<SendEmail />} />
+          <Route exact path="/email-sent" element={<EmailSent />} />
 					<Route exact path="/new-password" element={<NewPassword />} />
 					<Route exact path="/account" element={<MyAccount />} />
 					<Route exact path="/signup" element={<CreateAccount />} />

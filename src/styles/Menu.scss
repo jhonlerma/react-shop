@@ -1,11 +1,11 @@
 @import 'vars';
 
 .Menu {
-	width: 100px;
+	width: 10rem;
 	height: auto;
-	border: 1px solid var(--very-light-pink);
-	border-radius: 6px;
-	padding: 20px 20px 0 20px;
+	border: 0.1rem solid var(--very-light-pink);
+	border-radius: 0.6rem;
+	padding: 2rem 2rem 0 2rem;
 }
 .Menu ul {
 	list-style: none;
@@ -20,8 +20,8 @@
 	font-weight: bold;
 }
 .Menu ul li:last-child {
-	padding-top: 20px;
-	border-top: 1px solid var(--very-light-pink);
+	padding-top: 2rem;
+	border-top: 0.1rem solid var(--very-light-pink);
 }
 .Menu ul li:last-child a {
 	color: var(--hospital-green);
@@ -30,6 +30,6 @@
 .Menu ul li a {
 	color: var(--back);
 	text-decoration: none;
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 	display: inline-block;
 }

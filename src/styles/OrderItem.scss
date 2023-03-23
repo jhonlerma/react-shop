@@ -3,17 +3,17 @@
 .OrderItem {
 	display: grid;
 	grid-template-columns: auto 1fr auto auto;
-	gap: 16px;
-	margin-bottom: 24px;
+	gap: 1.6rem;
+	margin-bottom: 2.4rem;
 	align-items: center;
 }
 .OrderItem figure {
 	margin: 0;
 }
 .OrderItem figure img {
-	width: 70px;
-	height: 70px;
-	border-radius: 20px;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 2rem;
 	object-fit: cover;
 }
 .OrderItem p:nth-child(2) {

@@ -3,9 +3,9 @@
 .Order {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
-	gap: 16px;
+	gap: 1.6rem;
 	align-items: center;
-	margin-bottom: 12px;
+	margin-bottom: 1.2rem;
 }
 .Order p:nth-child(1) {
 	display: flex;
