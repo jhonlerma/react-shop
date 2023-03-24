@@ -10,6 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         publicPath: '/',
+        assetModuleFilename: 'assets/[hash][ext][query]',
         clean: true
     },
     resolve: {
@@ -18,7 +19,12 @@ module.exports = {
             '.jsx'
         ],
         alias: {
-
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@containers': path.resolve(__dirname, 'src/containers/'),
+            '@pages': path.resolve(__dirname, 'src/pages/'),
+            '@styles': path.resolve(__dirname, 'src/styles/'),
+            '@icons': path.resolve(__dirname, 'src/assets/icons/'),
+            '@logos': path.resolve(__dirname, 'src/assets/logos/'),
         }
     },
     module: {
@@ -44,7 +50,20 @@ module.exports = {
                     'sass-loader'
                 ]
 
-            }
+            },
+            {
+                test: /\.(jpg|jpeg|gif|webp|png)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/[name][ext]'
+                }
+            },
+            {
+                test: /\.svg/,
+                type: 'asset/inline',
+            },
+
+
 
         ]
     },
